@@ -239,7 +239,7 @@ export function buildAllForestTrees(entities, relationships, spouseMap) {
 
   for (const rId of candidateRoots) {
     if (globalVisited.has(rId)) continue;
-    const t = buildFamilyTree(entities, relationships, rId, spouseMap);
+    const t = buildFamilyTree(entities, relationships, rId, spouseMap, globalVisited);
     if (t) {
       allTrees.push(t);
       // Mark all nodes in this tree as visited

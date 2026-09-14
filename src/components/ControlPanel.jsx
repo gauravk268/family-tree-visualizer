@@ -84,7 +84,7 @@ export default function ControlPanel({
           </select>
           <p className="text-[10px] text-slate-500">
             {rootId
-              ? `Anchored on #${rootId}. In-law ancestor branches & all trees displayed.`
+              ? `Anchored on #${rootId}. Displaying only this family tree.`
               : "Showing all family lineages & vertices without root restriction."}
           </p>
         </div>
